@@ -8,7 +8,7 @@
     <style>
         body {
             display: flex;
-            height: 80vh;
+            height: 100vh;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -16,22 +16,25 @@
            
         }
         #target {
-            float: left; 
             width: 200px; 
             height: 35px;
             margin: 55px;
-            margin-top: 155px;
+            margin-top: 50px;
             padding: 10px;
             border: 1px solid #aaaaaa;
         }
+
     </style>
 </head>
 <body>
-    
-<h2>Drag & Drop</h2>
-<p ondragstart="drag(event)" draggable="true" id="item">Move Me</p>
-<div ondrop="drop(event)" id="target" ondragover="allow(event)"></div>
-<p  id="result"></p>
+    <div class="container">
+        <h2>Drag & Drop</h2>
+        <p ondragstart="drag(event)" draggable="true" id="item">Move Me</p>
+        <div ondrop="drop(event)" id="target" ondragover="allow(event)"></div>
+        <p  id="result"></p>
+
+    </div>
+
 
     <script src="main.js"></script>
 </body>
